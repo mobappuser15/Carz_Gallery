@@ -1,0 +1,122 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: auto;
+	padding: 0 2rem;
+	background-color: #fff;
+	color: white;
+	font-size: 16px;
+	padding-left: 54px;
+	font-family: "Open Sans", sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
+	border-bottom: solid 1px #c6c6c6;
+}
+
+nav a {
+	margin: 0 2rem;
+	color: #000;
+	text-decoration: none;
+}
+
+nav a:hover {
+	/* color: #f76d2b; */
+}
+
+a:hover,
+a:focus {
+	color: #c1272d;
+	text-decoration: none;
+	/* border-bottom: 3px solid #f76d2b; */
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	opacity: 0;
+	font-size: 20px;
+	margin-left: 90px !important;
+}
+
+@media only screen and (max-width: 560px) {
+	header {
+		align-items: center;
+		background-color: #fff;
+		color: #fff;
+		display: flex;
+		font-family: "Open Sans", sans-serif;
+		font-size: 16px;
+		height: auto;
+		justify-content: space-between;
+		padding: 8px 0px 8px 15px;
+		height: 60px;
+	}
+	.fixed-top img {
+		width: 19%;
+	}
+	header .nav-btn {
+		background: transparent;
+		border: none;
+		color: #c1272d;
+		cursor: pointer;
+		font-size: 20px;
+		margin-left: 0px;
+		opacity: 0;
+		outline: none;
+		padding: 5px;
+		position: absolute;
+		right: 21px;
+		top: 12px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 2;
+	}
+	.nv_center {
+	}
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 80%;
+		flex-direction: column;
+		display: flex;
+		/* align-items: center; */
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: #222;
+		transition: 1s;
+		transform: translateX(-100vh);
+		z-index: 99999;
+	}
+	header .responsive_nav {
+		transform: none;
+	}
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+	nav a {
+		padding-top: 0px 30px !important;
+		font-size: 22px;
+		text-align: left;
+	}
+}
+
+.nv_center {
+	padding-left: 18%;
+}
+
+.icon_rt {
+	padding-right: 45px;
+	margin-top: -32px;
+}
